@@ -1,0 +1,30 @@
+/* Appliquer la police Inter à tout le document */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Ajout d'un défilement fluide pour les ancres */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Style pour les indicateurs de chargement (loader) */
+.loader {
+    border: 4px solid #f3f3f3; /* Gris clair */
+    border-top: 4px solid #175DDC; /* Bleu de la marque */
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+}
+
+/* Animation pour la rotation du loader */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Classe utilitaire pour cacher des éléments (utilisée par le JavaScript) */
+.hidden {
+    display: none;
+}
